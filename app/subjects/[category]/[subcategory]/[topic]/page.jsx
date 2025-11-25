@@ -268,7 +268,7 @@ export default function TopicPage({ params }) {
                     <h2 className="text-3xl md:text-4xl font-semibold mb-2">
                         Hear From Our <span className="text-[#2563eb]">Students</span>
                     </h2>
-                    <p className="mb-8 text-gray-600">Here's what our students have to say about their experiences.</p>
+                    <p className="mb-8 text-gray-600">What our students have to say about their experiences.</p>
 
                     <Slider
                         dots={true}
