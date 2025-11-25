@@ -83,7 +83,7 @@ export default function TopicPage({ params }) {
             <section className="pt-10 mt-7 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">
 
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl mb-5 font-semibold text-gray-900 text-center">
                         {content.whyChoose?.heading}
                     </h2>
 

@@ -98,14 +98,16 @@ const Navbar = () => {
                     onMouseEnter={() => setSubjectOpen(true)}
                     onMouseLeave={() => setSubjectOpen(false)}
                   >
-                    <span
-                      className={classNames(
-                        pathname.startsWith("/subjects") ? "underline-links" : "text-slategray",
-                        "px-3 py-4 text-lg opacity-75 hover:opacity-100 cursor-pointer font-semibold"
-                      )}
-                    >
-                      Subjects
-                    </span>
+                    <Link href="/subjects">
+                      <span
+                        className={classNames(
+                          pathname.startsWith("/subjects") ? "underline-links" : "text-slategray",
+                          "px-3 py-4 text-lg opacity-75 hover:opacity-100 cursor-pointer font-semibold"
+                        )}
+                      >
+                        Subjects
+                      </span>
+                    </Link>
 
                     {subjectOpen && (
                       <div className="absolute left-0 top-full mt-2 w-[650px] bg-white shadow-xl rounded-xl p-6 grid grid-cols-2 gap-6 z-50">
