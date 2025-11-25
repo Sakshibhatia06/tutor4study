@@ -114,6 +114,7 @@ export default function MultipleItems(): JSX.Element | null {
                       alt={item.name}
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
 

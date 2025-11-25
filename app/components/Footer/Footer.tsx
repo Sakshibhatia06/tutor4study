@@ -25,6 +25,7 @@ const Footer: React.FC = () => {
               height={70}
               className="h-20 w-auto mb-3"
               priority
+              unoptimized
             />
             <p className="text-base sm:text-lg font-semibold leading-relaxed text-center text-black">
               It&apos;s Time To Pull In A <br />

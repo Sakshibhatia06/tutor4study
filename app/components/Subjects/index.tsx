@@ -80,6 +80,7 @@ export default class MultipleItems extends Component {
                         alt="Math Tutoring"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -119,6 +120,7 @@ export default class MultipleItems extends Component {
                         alt="Design System"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -157,6 +159,7 @@ export default class MultipleItems extends Component {
                         alt="Design Banner"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -197,6 +200,7 @@ export default class MultipleItems extends Component {
                         alt="Python Data Science"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>

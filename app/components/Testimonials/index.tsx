@@ -108,6 +108,7 @@ export default class MultipleItems extends Component {
                       width={100}
                       height={100}
                       className="inline-block rounded-full  w-10 h-10"
+                      unoptimized
                     />
                   </div>
 

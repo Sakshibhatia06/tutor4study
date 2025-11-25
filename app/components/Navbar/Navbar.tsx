@@ -61,10 +61,10 @@ const Navbar = () => {
               {/* LOGO */}
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/" className="flex items-center">
-                  <Image src={Logo} alt="Logo" width={60} height={60} className="h-12 w-auto block lg:hidden" priority />
+                  <Image src={Logo} alt="Logo" width={60} height={60} className="h-12 w-auto block lg:hidden" priority unoptimized/>
                 </Link>
                 <Link href="/" className="flex items-center">
-                  <Image src={Logo} alt="Logo" width={60} height={60} className="h-12 w-auto hidden lg:block" priority />
+                  <Image src={Logo} alt="Logo" width={60} height={60} className="h-12 w-auto hidden lg:block" priority unoptimized/>
                 </Link>
               </div>
 

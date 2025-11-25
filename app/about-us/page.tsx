@@ -152,6 +152,7 @@ const SkillsSection: FC = () => {
                   width={500}
                   height={500}
                   className="object-cover w-full h-full opacity-90"
+                  unoptimized
                 />
               </div>
             </div>

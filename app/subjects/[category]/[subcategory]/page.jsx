@@ -54,6 +54,7 @@ export default function SubCategoryPage({ params }) {
                       alt={topic.title}
                       fill
                       className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                      unoptimized
                     />
                   </div>
                 </div>

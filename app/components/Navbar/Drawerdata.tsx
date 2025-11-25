@@ -62,16 +62,26 @@ const Data = () => {
                 </Link>
               ) : (
                 // Subjects dropdown (click-to-toggle)
-                <div key={item.name}>
+                <div key="subjects" className="relative">
+                  {/* Subjects main link */}
+                  <Link
+                    href="/subjects"
+                    className="w-full block py-2 text-lg font-semibold text-gray-800 hover:text-Blueviolet"
+                  >
+                    Subjects
+                  </Link>
+
+                  {/* Dropdown toggle only for showing subcategories */}
                   <button
                     onClick={() => setSubjectsOpen(!subjectsOpen)}
-                    className="w-full text-left py-1 text-lg font-normal opacity-75 hover:opacity-100"
+                    className="absolute right-0 top-2 text-lg font-normal opacity-50 hover:opacity-100 md:hidden"
                   >
-                    {item.name} {subjectsOpen ? "▲" : "▼"}
+                    {subjectsOpen ? "▲" : "▼"}
                   </button>
 
+                  {/* Dropdown menu */}
                   {subjectsOpen && (
-                    <div className="mt-2 pl-4 space-y-4">
+                    <div className="mt-2 pl-4 space-y-4 bg-white rounded-lg shadow-lg md:absolute md:top-full md:left-0 md:w-[650px] md:grid md:grid-cols-2 md:p-6 z-50">
                       {subjectsMenu.map((cat) => (
                         <div key={cat.category}>
                           <h3 className="font-semibold text-sm text-Blueviolet">{cat.category}</h3>
@@ -95,6 +105,7 @@ const Data = () => {
                     </div>
                   )}
                 </div>
+
               )
             )}
 

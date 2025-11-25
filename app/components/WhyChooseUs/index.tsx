@@ -31,6 +31,7 @@ const BecomeInstructor = () => {
             src={instructorImg}
             alt="Instructor"
             className="rounded-xl object-cover w-full h-auto shadow-lg"
+            unoptimized
           />
         </div>
       </div>
