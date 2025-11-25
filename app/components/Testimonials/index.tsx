@@ -39,9 +39,6 @@ const postData: DataType[] = [
  
 ];
 
-// ======================
-// CAROUSEL COMPONENT
-// ======================
 export default class MultipleItems extends Component {
   render() {
     const settings = {
