@@ -13,15 +13,6 @@ const topicContentMap = {
     "algebra": algebraContent,
 };
 
-// ✅ Correct Meta Setup for Next.js App Router
-export async function generateMetadata({ params }) {
-    const content = topicContentMap[params.topic];
-    return {
-        title: content?.metaTitle || "Tutor4Study | Learn Smart",
-        description: content?.metaDesc || "Learn from expert teachers at Tutor4Study.",
-    };
-}
-
 export default function TopicPage({ params }) {
     const { category, subcategory, topic } = params;
 
