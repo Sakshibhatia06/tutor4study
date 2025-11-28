@@ -41,6 +41,7 @@ export default class MultipleItems extends Component {
                         alt="Math Tutoring"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -77,6 +78,7 @@ export default class MultipleItems extends Component {
                         alt="Science Tutoring"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -147,6 +149,7 @@ export default class MultipleItems extends Component {
                         alt="Test Preparation"
                         fill
                         className="object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                        unoptimized
                       />
                     </div>
                   </div>

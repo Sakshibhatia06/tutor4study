@@ -2,15 +2,32 @@
 import { subjectsData } from "@/app/subjects/data";
 import { basicMathematicsContent } from "@/app/subjects/content/basic-mathematics";
 import { algebraContent } from "@/app/subjects/content/algebra";
+import { geometryContent } from "@/app/subjects/content/geometry";
+import { trigonometryContent } from "@/app/subjects/content/trigonometry";
+import { calculusContent } from "@/app/subjects/content/calculus";
+import { statisticsProbabilityContent } from "@/app/subjects/content/statistics-and-probability";
+import { generalScienceContent } from "@/app/subjects/content/general-science";
+import { physicsContent } from "@/app/subjects/content/physics";
+import { biologyContent } from "@/app/subjects/content/biology";
+import { chemistryContent } from "@/app/subjects/content/chemistry";
+import { evsContent } from "@/app/subjects/content/environmental-science";
 import Slider from "react-slick";
 import Link from 'next/link';
-import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const topicContentMap = {
     "basic-mathematics": basicMathematicsContent,
     "algebra": algebraContent,
+    "geometry": geometryContent,
+    "trigonometry": trigonometryContent,
+    "calculus": calculusContent,
+    "chemistry": chemistryContent,
+    "biology": biologyContent,
+    "environmental-science":evsContent,
+    "physics": physicsContent,
+    "general-science": generalScienceContent,
+    "statistics-and-probability": statisticsProbabilityContent,
 };
 
 export default function TopicPage({ params }) {
@@ -327,7 +344,7 @@ export default function TopicPage({ params }) {
 
 
                     <Link href={content.mathPromo?.ctaLink}>
-                        <button className="bg-[#2563eb] text-lg text-white font-medium py-4 px-6 transition duration-150 ease-in-out rounded-full hover:bg-paleblue text-center flex justify-center max-w-xl mx-auto">
+                        <button className="bg-[#2563eb] text-lg text-white font-medium py-4 px-6 transition duration-150 ease-in-out rounded-full hover:bg-[#1047bd] text-center flex justify-center max-w-xl mx-auto">
                             {content.mathPromo?.ctaText}
                         </button>
                     </Link>
