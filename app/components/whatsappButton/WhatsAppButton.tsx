@@ -8,7 +8,7 @@ const Whatsapp = FaWhatsapp as React.FC<React.SVGProps<SVGSVGElement>>;
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/7073437393"
+      href="https://wa.me/7646095877"
       target="_blank"
       rel="noopener noreferrer"
       className="
