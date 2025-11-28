@@ -54,7 +54,7 @@ export default function TopicPage({ params }) {
                     </p>
 
                     <a
-                        href={`https://wa.me/917073437393?text=${encodeURIComponent(
+                        href={`https://wa.me/917646095877?text=${encodeURIComponent(
                             `Hello! I am interested in learning more about the topic ${content.hero?.heading}`
                         )}`}
                         target="_blank"

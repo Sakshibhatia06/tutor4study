@@ -13,7 +13,7 @@ const Banner = () => {
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0 mt-6'>Personalized tutoring that fits your schedule and helps you succeed.</h3>
 
                         <div className="flex flex-row gap-4 justify-center lg:justify-start mt-10">
-                             <Link href="/contact-us">
+                             <Link href="https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class">
                            <button className="text-Blueviolet text-lg font-medium py-4 px-6 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet"> 
                             Get Started with a Free Trial </button>
                             </Link>

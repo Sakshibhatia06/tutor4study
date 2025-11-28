@@ -189,7 +189,7 @@ benefits: {
     title: "Enroll Now – Let’s Make Math Easy and Fun!",
     description: "At Tutor4Study, we believe math is not just about numbers — it’s about understanding patterns, solving problems, and thinking critically. Join thousands of students who have discovered how easy math can be with our Basic Mathematics online classes.",
     ctaText: "Get Started with a Free Trial",
-    ctaLink: "/contact-us",
+    ctaLink: "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
   tutors: {
     heading: "Meet Our Math Tutors",
@@ -202,7 +202,7 @@ benefits: {
       "🧩 Patient, friendly, and supportive approach",
     ],
     ctaText: "Book a Free Demo Class",
-    ctaLink: "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+    ctaLink: "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
 

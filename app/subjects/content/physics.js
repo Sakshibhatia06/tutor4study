@@ -174,7 +174,7 @@ export const physicsContent = {
     ],
     ctaText: "Book a Free Physics Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Physics%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Physics%20demo%20class",
   },
 
   mathPromo: {
@@ -183,7 +183,7 @@ export const physicsContent = {
       "Make Physics easy, logical, and fun with our expert tutors. Begin your learning journey now.",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Physics%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Physics%20demo%20class",
   },
 
   faqs: [

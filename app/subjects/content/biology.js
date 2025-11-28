@@ -182,7 +182,7 @@ export const biologyContent = {
     ],
     ctaText: "Book a Free Biology Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Biology%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Biology%20demo%20class",
   },
 
   mathPromo: {
@@ -191,7 +191,7 @@ export const biologyContent = {
       "Make Biology interesting, visual, and easy with our expert tutors. Start your learning journey now!",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Biology%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Biology%20demo%20class",
   },
 
   faqs: [

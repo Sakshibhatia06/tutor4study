@@ -189,7 +189,7 @@ export const chemistryContent = {
     ],
     ctaText: "Book a Free Chemistry Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Chemistry%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Chemistry%20demo%20class",
   },
 
   mathPromo: {
@@ -198,7 +198,7 @@ export const chemistryContent = {
       "Make Chemistry clear, simple, and fun with our expert tutors. Start your learning journey now.",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20Chemistry%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20Chemistry%20demo%20class",
   },
 
   faqs: [

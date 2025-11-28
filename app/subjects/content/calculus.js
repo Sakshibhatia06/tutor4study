@@ -213,7 +213,7 @@ export const calculusContent = {
       "Calculus doesn’t have to be confusing. Our expert tutors make every topic simple, visual, and intuitive. Start your learning journey today!",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   tutors: {
@@ -228,7 +228,7 @@ export const calculusContent = {
     ],
     ctaText: "Book a Free Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   faqs: [

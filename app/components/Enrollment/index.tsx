@@ -71,7 +71,7 @@ const Newsletter = () => {
                             <h3 className="text-base font-normal opacity-75 text-white text-center mb-8">
                                Don&lsquo;t wait! Take the first step toward achieving your academic goals today.
                             </h3>
-                             <Link href="/contact-us">
+                             <Link href="https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class">
                                <button className="bg-white text-lg font-medium py-4 px-6 transition duration-150 ease-in-out rounded-full  hover:bg-paleblue text-center flex justify-center max-w-xl mx-auto">
                         Get Started with a Free Trial
                     </button>

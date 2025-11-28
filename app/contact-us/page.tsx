@@ -235,8 +235,8 @@ const ContactInfo: React.FC = () => (
 
         <p className="flex items-center gap-2 mt-3 text-gray-300">
           <CallOutline />
-          <a href="tel:+917073437393" className="hover:underline">
-            +91 7073437393
+         <a href="tel: +917646095877" className="hover:underline">
+            +91 7646095877
           </a>
         </p>
 
@@ -252,7 +252,7 @@ const ContactInfo: React.FC = () => (
 
         <p className="flex items-center gap-2 mt-3 text-gray-300">
           <LocationOutline />
-          <span>Jodhpur, Rajasthan, India</span>
+          <span>Near T-Junction, Shapoorji, New Town, Action Area III, Kolkata, West Bengal – 700135, India</span>
         </p>
 
         <div className="flex gap-4 mt-4 text-orange-500 text-lg">
@@ -267,7 +267,7 @@ const ContactInfo: React.FC = () => (
 
     <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96896.92852121097!2d72.94814097660938!3d26.27033588207035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c4eaa06ccb9%3A0x8114ea5b0ae1abb8!2sJodhpur%2C%20Rajasthan!5e1!3m2!1sen!2sin!4v1760699599943!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.6855257208064!2d88.514568!3d22.627530!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027557c1ede4e1%3A0x7a8e7a1f63c19e4d!2sShapoorji%20Bus%20Stop%2C%20Action%20Area%20III%2C%20New%20Town%2C%20Kolkata%2C%20West%20Bengal%20700135!5e0!3m2!1sen!2sin!4v1732800000000!5m2!1sen!2sin" 
         width="100%"
         height="300"
         style={{ border: 0 }}

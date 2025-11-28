@@ -227,7 +227,7 @@ export const statisticsProbabilityContent = {
       "Mastering Statistics and Probability can open doors to countless opportunities — from data science and AI to finance and research. At Tutor4Study, we make learning data analysis fun, visual, and deeply rewarding. Join thousands of students who have discovered the power of understanding data.",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   tutors: {
@@ -242,7 +242,7 @@ export const statisticsProbabilityContent = {
     ],
     ctaText: "Book a Free Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   faqs: [

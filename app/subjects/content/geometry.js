@@ -211,7 +211,7 @@ export const geometryContent = {
     description:
       "Understanding Geometry opens the door to logical thinking, creativity, and real-world problem-solving. Start your learning journey with expert tutors today.",
     ctaText: "Get Started with a Free Trial",
-    ctaLink: "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+    ctaLink: "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   tutors: {
@@ -226,7 +226,7 @@ export const geometryContent = {
     ],
     ctaText: "Book a Free Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   faqs: [

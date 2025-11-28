@@ -206,7 +206,7 @@ export const trigonometryContent = {
       "Trigonometry doesn’t have to be intimidating. With Tutor4Study, you’ll see how logical and interesting it truly is. Join thousands of students who have mastered math with our expert tutors.",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   tutors: {
@@ -221,7 +221,7 @@ export const trigonometryContent = {
     ],
     ctaText: "Book a Free Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   faqs: [

@@ -175,7 +175,7 @@ export const evsContent = {
     ],
     ctaText: "Book a Free EVS Demo Class",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20EVS%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20EVS%20demo%20class",
   },
 
   mathPromo: {
@@ -184,7 +184,7 @@ export const evsContent = {
       "Make EVS fun, visual, and meaningful with our engaging online classes. Start your child’s learning journey today.",
     ctaText: "Get Started with a Free Trial",
     ctaLink:
-      "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20EVS%20demo%20class",
+      "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20EVS%20demo%20class",
   },
 
   faqs: [

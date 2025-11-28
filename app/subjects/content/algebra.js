@@ -208,7 +208,7 @@ export const algebraContent = {
       "🌍 Available for international students across time zones",
     ],
     ctaText: "Book a Free Algebra Demo Class",
-    ctaLink: "https://wa.me/917073437393?text=I%20would%20like%20to%20book%20a%20free%20algebra%20demo%20class",
+    ctaLink: "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 
   faqs: [
@@ -239,6 +239,6 @@ export const algebraContent = {
     description:
       "Don’t let Algebra hold you back from achieving your academic goals. With Tutor4Study, you’ll master algebraic concepts in a fun, engaging, and stress-free way.",
     ctaText: "Book a Free Demo",
-    ctaLink: "/contact-us",
+    ctaLink: "https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class",
   },
 };
