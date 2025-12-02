@@ -11,13 +11,39 @@ import { physicsContent } from "@/app/subjects/content/physics";
 import { biologyContent } from "@/app/subjects/content/biology";
 import { chemistryContent } from "@/app/subjects/content/chemistry";
 import { evsContent } from "@/app/subjects/content/environmental-science";
+import { programmingContent } from "@/app/subjects/content/programming-for-beginners";
+import { msOfficeContent } from "@/app/subjects/content/microsoft-office";
+import { basicComputerContent } from "@/app/subjects/content/basic-computer-skills";
+import { economicsContent } from "@/app/subjects/content/economics";
+import { politicalScienceContent } from "@/app/subjects/content/political-science";
+import { geographyContent } from "@/app/subjects/content/geography";
+import { historyContent } from "@/app/subjects/content/history";
+import { hindiContent } from "@/app/subjects/content/hindi";
+import { englishContent } from "@/app/subjects/content/english";
+import { arabicContent } from "@/app/subjects/content/arabic";
+import { frenchContent } from "@/app/subjects/content/french";
+import { spanishContent } from "@/app/subjects/content/spanish";
+import { germanContent } from "@/app/subjects/content/german";
 import Slider from "react-slick";
 import Link from 'next/link';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const topicContentMap = {
+
     "basic-mathematics": basicMathematicsContent,
+    "microsoft-office": msOfficeContent,
+    "basic-computer-skills": basicComputerContent,
+    "economics": economicsContent,
+    "political-science": politicalScienceContent,
+    "geography": geographyContent,
+    "history": historyContent,
+    "hindi": hindiContent,
+    "english": englishContent,
+    "arabic": arabicContent,
+    "french": frenchContent,
+    "spanish": spanishContent,
+    "german": germanContent,
     "algebra": algebraContent,
     "geometry": geometryContent,
     "trigonometry": trigonometryContent,
@@ -28,6 +54,7 @@ const topicContentMap = {
     "physics": physicsContent,
     "general-science": generalScienceContent,
     "statistics-and-probability": statisticsProbabilityContent,
+    "programming-for-beginners": programmingContent,
 };
 
 export default function TopicPage({ params }) {

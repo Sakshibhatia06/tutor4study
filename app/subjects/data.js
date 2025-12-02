@@ -28,30 +28,30 @@ export const subjectsData = {
       languages: {
         title: "Languages",
         topics: [
-          { slug: "english", title: "English", desc: "Grammar, writing, literature." },
-          { slug: "hindi", title: "Hindi", desc: "Fundamentals of Hindi." },
-          { slug: "french", title: "French", desc: "Basics of French language." },
-          { slug: "spanish", title: "Spanish", desc: "Basics of French language." },
-          { slug: "german", title: "German", desc: "Basics of French language." },
-          { slug: "arabic", title: "Arabic", desc: "Basics of French language." },
+          { slug: "english", title: "English", desc: "English is the global language of communication, knowledge, and opportunity. Whether you want to strengthen academic English, improve your writing, speak confidently, or understand literature deeply — our expert English tutors help you learn step-by-step with clarity and confidence.",  image:"/assets/English-Course.jpg" },
+          { slug: "hindi", title: "Hindi", desc: "Hindi is one of the most expressive languages in the world — rich in culture, clarity, and beauty. Whether you're studying Hindi in school or learning as a new language, our tutors help you master grammar, vocabulary, writing, and fluent speaking.", image:"/assets/Hindi-Course.jpg" },
+          { slug: "french", title: "French", desc: "French is a global language spoken across 29 countries — essential for travel, careers, and education abroad. Whether you're a beginner or preparing for DELF A1–B2, our French tutors make learning smooth, immersive, and enjoyable.", image:"/assets/French-Course.jpg" },
+          { slug: "spanish", title: "Spanish", desc: "Spanish is one of the world’s most widely spoken languages and incredibly fun to learn. Our Spanish tutors help you develop grammar, vocabulary, conversation, and cultural understanding step by step.", image:"/assets/Spanish-Course.jpg" },
+          { slug: "german", title: "German", desc: "German is the language of engineering, innovation, and top global universities. Whether you're aiming for higher studies, migration, or academic success — our German tutors help you learn with precision and confidence.", image:"/assets/German-Course.jpg" },
+          { slug: "arabic", title: "Arabic", desc: "Arabic is a beautiful and influential language spoken across the Middle East and North Africa. Whether you want to learn Modern Standard Arabic, conversational Arabic, or foundational Quranic Arabic — we teach step-by-step in an interactive and simple way.", image:"/assets/Arabic-Course.jpg" },
         ]
       },
       "social-studies": {
         title: "Social Studies",
         topics: [
-          { slug: "history", title: "History", desc: "Grammar, writing, literature." },
-          { slug: "geography", title: "Geography", desc: "Fundamentals of Hindi." },
-          { slug: "political-science", title: "Civics / Political Science", desc: "Basics of French language." },
-          { slug: "economics", title: "Economics", desc: "Basics of French language." }
+          { slug: "history", title: "History", desc: "Welcome to Tutor4Study’s Online History Classes History is more than dates and events — it’s the story of humanity, civilizations, culture, discoveries, wars, revolutions, and progress. Understanding History helps students think critically, analyze patterns, and connect past events with the world today.", image:"/assets/History-Course.jpg" },
+          { slug: "geography", title: "Geography", desc: "Geography is the science of Earth — its landforms, climates, people, cultures, resources, and environments. It helps us understand the world we live in, how nature works, and how societies grow and interact.", image:"/assets/Geography-Course.jpg" },
+          { slug: "political-science", title: "Civics / Political Science", desc: "Political Science is more than studying governments — it’s about understanding how societies function, how laws are made, how leaders lead, and how nations interact. It shapes our rights, responsibilities, and the world we live in.", image:"/assets/Political-Science-Course.jpg" },
+          { slug: "economics", title: "Economics", desc: "Economics is not just about money — it is the science of choices, resources, markets, and human behavior. From understanding inflation to decoding business decisions, Economics influences everyday life, national policies, and global markets." , image:"/assets/Economics-Course.jpg"}
         ]
       },
       "computer-technology": {
         title: "Computer Technology",
         topics: [
-          { slug: "basic-computer-skills", title: "Basic Computer Skills", desc: "Grammar, writing, literature." },
-          { slug: "microsoft-office", title: "Microsoft Office (Word, Excel, PowerPoint)", desc: "Fundamentals of Hindi." },
-          { slug: "programming-for-beginners", title: "Programming for Beginners (Python, C++, Java)", desc: "Basics of French language." },
-          { slug: "web-development-basics", title: "Web Development Basics (HTML, CSS, JavaScript)", desc: "Basics of French language." }
+          { slug: "basic-computer-skills", title: "Basic Computer Skills", desc: "In today’s digital world, computer skills are not optional — they are essential. Whether you want to study smarter, work efficiently, or stay connected, learning the basics of computers empowers you in every area of life." ,  image:"/assets/Basic-Computer-Course.jpg"},
+          { slug: "microsoft-office", title: "Microsoft Office (Word, Excel, PowerPoint)", desc: "Microsoft Office is the most essential skill for school, work, and modern digital life. Whether it’s creating documents, analyzing data, or making presentations, MS Office tools help you communicate clearly, work efficiently, and stand out academically or professionally." , image:"/assets/MS-Office-Course.jpg" },
+          { slug: "programming-for-beginners", title: "Programming For Beginners", desc: "Programming is no longer only for tech professionals — it has become a must-have skill for students, working professionals, and anyone curious about how digital tools are built. At Tutor4Study, we make coding simple, engaging, and accessible to everyone, even if you have no prior experience.", image:"/assets/Programming-Course.jpg" },
+          { slug: "web-development-basics", title: "Web Development Basics (HTML, CSS, JavaScript)", desc: "Basics of French language.", image:"/assets/science-subject (1).jpg" }
         ]
       },
     }
