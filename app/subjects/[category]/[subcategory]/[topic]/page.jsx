@@ -24,13 +24,50 @@ import { arabicContent } from "@/app/subjects/content/arabic";
 import { frenchContent } from "@/app/subjects/content/french";
 import { spanishContent } from "@/app/subjects/content/spanish";
 import { germanContent } from "@/app/subjects/content/german";
+import { timeManagementStudySkillsContent} from "@/app/subjects/content/time-management-and-study-skills";
+import { personalityDevelopmentContent } from "@/app/subjects/content/personality-development";
+import { publicSpeakingContent } from "@/app/subjects/content/public-speaking";
+import { neetJeeCoachingContent } from "@/app/subjects/content/neet-jee-coaching";
+import { sscBankCoachingContent } from "@/app/subjects/content/ssc-bank-government-exams";
+import { greGmatCoachingContent } from "@/app/subjects/content/gre-gmat";
+import { satActCoachingContent } from "@/app/subjects/content/sat-act";
+import { entrepreneurshipContent } from "@/app/subjects/content/entrepreneurship";
+import { marketingContent } from "@/app/subjects/content/marketing-commerce";
+import { financeContent } from "@/app/subjects/content/finance-commerce";
+import { businessStudiesContent } from "@/app/subjects/content/business-studies";
+import { economicsBusinessContent } from "@/app/subjects/content/economics-business";
+import { accountingContent } from "@/app/subjects/content/accounting";
+import { computerScienceContent  } from "@/app/subjects/content/computer-science-data-structures";
+import { chemistryAdvanceContent  } from "@/app/subjects/content/advanced-chemistry";
+import { physicsAdvanceContent } from "@/app/subjects/content/advanced-physics";
+import { advancedStatisticsContent } from "@/app/subjects/content/advanced-statistics";
+import { differentialEquationsContent } from "@/app/subjects/content/differential-equations";
+import { linearAlgebraContent } from "@/app/subjects/content/linear-algebra";
 import Slider from "react-slick";
 import Link from 'next/link';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const topicContentMap = {
-
+    "economics-business":economicsBusinessContent,
+    "business-studies":businessStudiesContent,
+    "finance-commerce":financeContent,
+    "ssc-bank-government-exams":sscBankCoachingContent,
+    "gre-gmat":greGmatCoachingContent,
+    "sat-act":satActCoachingContent,
+    "entrepreneurship":entrepreneurshipContent,
+    "marketing-commerce":marketingContent,
+    "time-management-and-study-skills":timeManagementStudySkillsContent,
+    "personality-development":personalityDevelopmentContent,
+    "public-speaking":publicSpeakingContent,
+    "neet-jee-coaching":neetJeeCoachingContent,
+    "linear-algebra": linearAlgebraContent,
+    "differential-equations":differentialEquationsContent,
+    "advanced-statistics":advancedStatisticsContent,
+    "advanced-physics":physicsAdvanceContent ,
+    "computer-science-data-structures": computerScienceContent,
+    "advanced-chemistry":chemistryAdvanceContent,
+    "accounting":accountingContent,
     "basic-mathematics": basicMathematicsContent,
     "microsoft-office": msOfficeContent,
     "basic-computer-skills": basicComputerContent,
@@ -55,6 +92,7 @@ const topicContentMap = {
     "general-science": generalScienceContent,
     "statistics-and-probability": statisticsProbabilityContent,
     "programming-for-beginners": programmingContent,
+    
 };
 
 export default function TopicPage({ params }) {

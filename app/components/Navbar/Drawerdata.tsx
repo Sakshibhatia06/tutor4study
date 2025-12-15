@@ -26,12 +26,12 @@ const subjectsMenu = [
   {
     category: "College / Advanced Level",
     categorySlug: "college-advanced",
-    sub: ["Mathematics & Statistics", "Science & Engineering", "Commerce & Business"],
+    sub: ["Mathematics and Statistics", "Science and Engineering", "Commerce and Business"],
   },
   {
     category: "Professional / Skill Development Courses",
     categorySlug: "professional-courses",
-    sub: ["Language & Communication", "Technology & Coding", "Exam Preparation", "Soft Skills"],
+    sub: ["Exam Preparation", "Soft Skills"],
   },
 ];
 

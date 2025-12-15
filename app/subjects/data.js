@@ -51,9 +51,64 @@ export const subjectsData = {
           { slug: "basic-computer-skills", title: "Basic Computer Skills", desc: "In today’s digital world, computer skills are not optional — they are essential. Whether you want to study smarter, work efficiently, or stay connected, learning the basics of computers empowers you in every area of life." ,  image:"/assets/Basic-Computer-Course.jpg"},
           { slug: "microsoft-office", title: "Microsoft Office (Word, Excel, PowerPoint)", desc: "Microsoft Office is the most essential skill for school, work, and modern digital life. Whether it’s creating documents, analyzing data, or making presentations, MS Office tools help you communicate clearly, work efficiently, and stand out academically or professionally." , image:"/assets/MS-Office-Course.jpg" },
           { slug: "programming-for-beginners", title: "Programming For Beginners", desc: "Programming is no longer only for tech professionals — it has become a must-have skill for students, working professionals, and anyone curious about how digital tools are built. At Tutor4Study, we make coding simple, engaging, and accessible to everyone, even if you have no prior experience.", image:"/assets/Programming-Course.jpg" },
-          { slug: "web-development-basics", title: "Web Development Basics (HTML, CSS, JavaScript)", desc: "Basics of French language.", image:"/assets/science-subject (1).jpg" }
+        ]
+      },
+    }
+  },
+  "college-advanced": {
+    title: "College / Advanced Level",
+    subcategories: {
+      "mathematics-and-statistics": {
+        title: "Mathematics and Statistics",
+        topics: [
+          { slug: "linear-algebra", title: "Linear Algebra", desc: "Linear Algebra is the foundation of modern mathematics, engineering, computer science, data science, and machine learning. Whether you're a school student, college learner, or advanced STEM aspirant — our expert tutors help you understand concepts clearly with interactive sessions and problem-based learning.", image: "/assets/Maths-Course (2).jpg" },
+          { slug: "differential-equations", title: "Differential Equations", desc: "Differential Equations form the backbone of engineering, physics, mathematics, computer science, biology, economics, and data science. Understanding them helps you analyze real-world systems — motion, heat, population growth, electrical circuits, fluid flow, and more.", image: "/assets/Maths-Course (4).jpg" },
+          { slug: "advanced-statistics", title: "Advanced Statistics", desc: "Advanced Statistics is essential for academic research, data science, economics, machine learning, business analytics, and scientific studies. Whether you are a student, researcher, or working professional, our expert tutors help you master complex statistical concepts with clarity, real-world examples, and practical applications.",image: "/assets/Maths-Course (3).jpg" },
+        ]
+      },
+
+      "science-and-engineering": {
+        title: "Science and Engineering",
+        topics: [
+          { slug: "advanced-physics", title: "Physics (Mechanics, Electromagnetism, Thermodynamics)", desc: "Physics is the science that explains how the world works — motion, forces, energy, electricity, heat, waves, and the universe itself. Whether you want to build strong fundamentals, improve numerical solving skills, or score higher in exams, our expert tutors make Physics simple, logical, and engaging.", image:"/assets/science-subject (6).jpg" },
+          { slug: "advanced-chemistry", title: "Chemistry (Organic, Inorganic, Physical)", desc: "Chemistry is the central science that explains the composition, structure, properties, and reactions of matter. Whether you aim to strengthen school fundamentals, prepare for board exams, or excel in competitive exams, our expert tutors make Chemistry easy, visual, and concept-driven.", image:"/assets/science-subject (5).jpg" },
+          { slug: "computer-science-data-structures", title: "Computer Science (Data Structures, Algorithms, Database Systems)", desc: "Computer Science is the backbone of modern technology — from apps and websites to AI, data science, and software development. Whether you are a school student, computer science graduate, or beginner programmer, our expert tutors help you build a strong foundation in Data Structures, Algorithms, and Database Systems through practical, step-by-step learning.", image:"/assets/Basic-Computer-Course.jpg" },
+        ]
+      },
+      "commerce-and-business": {
+        title: "Commerce and Business",
+        topics: [
+          { slug: "accounting", title: "Accounting", desc: "Accounting is the language of business. From tracking financial transactions to preparing statements and analyzing performance, accounting forms the foundation of commerce, finance, and management careers." ,  image:"/assets/Accounting-Course.jpg"},
+          { slug: "economics-business", title: "Economics", desc: "Economics explains how societies allocate resources, make decisions, and respond to change. It develops analytical thinking and policy understanding." , image:"/assets/Economics-Course.jpg" },
+          { slug: "business-studies", title: "Business Studies", desc: "Business Studies helps students understand how organizations work, how decisions are made, and how businesses grow in real markets.", image:"/assets/Business-Studies-Course.jpg" },
+          { slug: "finance-commerce", title: "Finance", desc: "Finance deals with money management, investments, and financial decision-making. Strong finance knowledge opens doors to careers in banking, corporate finance, and investments.", image:"/assets/Finance-Course.jpg" },
+          { slug: "marketing-commerce", title: "Marketing", desc: "Marketing connects businesses with customers. Understanding marketing strategies is essential for business growth and brand success.", image:"/assets/Marketing-Course.jpg" },
+          { slug: "entrepreneurship", title: "Entrepreneurship", desc: "Entrepreneurship is about innovation, problem-solving, and creating value. College is the best time to develop an entrepreneurial mindset.", image:"/assets/Entrepreneurship-Course.jpg" }
+        ]
+      },
+    }
+  },
+  "professional-courses": {
+    title: "Professional / Skill Development Courses",
+    subcategories: {
+      "exam-preparation": {
+        title: "Exam Preparation",
+        topics: [
+          { slug: "sat-act", title: "SAT / ACT", desc: "The SAT and ACT are more than entrance exams — they are gateways to top universities and scholarships. Strong scores can shape your academic future and open global opportunities." ,  image:"/assets/SAT-ACT-Coaching.jpg"},
+          { slug: "gre-gmat", title: "GRE / GMAT", desc: "GRE and GMAT scores play a crucial role in admissions to top global universities and business schools. A high score sets you apart from the competition." , image:"/assets/GRE-GMAT-Coaching.jpg" },
+          { slug: "ssc-bank-government-exams", title: "SSC / Bank / Government Exams", desc: "Government exams demand speed, accuracy, and strong fundamentals. Tutor4Study helps you prepare smartly with expert guidance and structured practice.", image:"/assets/SSC-Bank-Coaching.jpg" },
+          { slug: "neet-jee-coaching", title: "NEET / JEE Coaching", desc: "NEET and JEE are among the most competitive exams in India. Success requires strong concepts, continuous practice, and expert guidance.", image:"/assets/NEET-JEE-Coaching.jpg" },
+        ]
+      },
+      "soft-skills": {
+        title: "Soft Skills",
+        topics: [
+          { slug: "public-speaking", title: "Public Speaking", desc: "Public speaking is more than delivering words — it’s about confidence, clarity, and connection. Whether speaking in classrooms, interviews, meetings, or on stage, effective communication sets you apart." ,  image:"/assets/Public-Speaking-Course.jpg"},
+          { slug: "personality-development", title: "Personality Development", desc: "Personality development is about more than appearance — it’s about confidence, mindset, communication, and self-growth. A strong personality helps you succeed academically, socially, and professionally." , image:"/assets/Personality-Development-Course.jpg" },
+          { slug: "time-management-and-study-skills", title: "Time Management & Study Skills", desc: "Success in academics depends not only on intelligence but also on how effectively you manage time and study. With the right techniques, students can reduce stress and achieve better results.", image:"/assets/Time-Management-Study-Skills.jpg" },
         ]
       },
     }
   }
+
 };
