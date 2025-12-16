@@ -14,6 +14,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about-us" },
   { name: "Subjects", href: "/subjects" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact ", href: "/contact-us" },
 ];
 
@@ -133,6 +134,14 @@ const Navbar = () => {
                       </div>
                     )}
                   </div>
+                  <Link href="/blog">
+                    <span className={classNames(
+                      pathname === "/blog" ? "underline-links" : "text-slategray",
+                      "px-3 py-4 text-lg opacity-75 hover:opacity-100 cursor-pointer font-semibold"
+                    )}>
+                      Blog
+                    </span>
+                  </Link>
 
                   {/* CONTACT */}
                   <Link href="/contact-us">
