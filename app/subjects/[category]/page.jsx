@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { subjectsData } from "@/app/subjects/data";
+import { use } from "react";
 
 export default function SubCategoryPage({ params }) {
-  const { category, subcategory } = params;
+  const { category, subcategory } = use(params);
 
   const subData = subjectsData[category]?.[subcategory];
 
@@ -29,4 +30,3 @@ export default function SubCategoryPage({ params }) {
     </div>
   );
 }
-

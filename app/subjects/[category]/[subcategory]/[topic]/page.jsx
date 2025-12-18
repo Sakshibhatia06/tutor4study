@@ -44,6 +44,7 @@ import { advancedStatisticsContent } from "@/app/subjects/content/advanced-stati
 import { differentialEquationsContent } from "@/app/subjects/content/differential-equations";
 import { linearAlgebraContent } from "@/app/subjects/content/linear-algebra";
 import Slider from "react-slick";
+import { useParams } from "next/navigation";
 import Link from 'next/link';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,16 +96,16 @@ const topicContentMap = {
     
 };
 
-export default function TopicPage({ params }) {
-    const { category, subcategory, topic } = params;
+export default function TopicPage() {
+  const { category, subcategory, topic } = useParams();
 
-    const subData = subjectsData[category]?.subcategories?.[subcategory];
-    const topicInfo = subData?.topics?.find((t) => t.slug === topic);
+  const subData = subjectsData[category]?.subcategories?.[subcategory];
+  const topicInfo = subData?.topics?.find((t) => t.slug === topic);
 
-    if (!topicInfo) return <h1>Topic Not Found</h1>;
+  if (!topicInfo) return <h1>Topic Not Found</h1>;
 
-    const content = topicContentMap[topic];
-    if (!content) return <h1>Content Coming Soon...</h1>;
+  const content = topicContentMap[topic];
+  if (!content) return <h1>Content Coming Soon...</h1>;
 
     return (
         <>
