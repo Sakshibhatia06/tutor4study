@@ -63,10 +63,6 @@ export const msOfficeContent = {
           "Formatting text, paragraphs, and pages",
           "Using tables, images, shapes, and SmartArt",
           "Headers, footers, page numbers",
-          "Styles, templates, and themes",
-          "Mail merge (letters, labels, envelopes)",
-          "Track changes and collaboration tools",
-          "Exporting PDFs and printing settings",
         ],
       },
       {
@@ -76,11 +72,6 @@ export const msOfficeContent = {
           "Data entry, sorting, filtering",
           "Basic formulas: SUM, AVERAGE, COUNT, IF",
           "Intermediate formulas: VLOOKUP, HLOOKUP, CONCAT, TEXT",
-          "Charts & graphs: pie, bar, line, combo",
-          "Pivot tables and pivot charts",
-          "Conditional formatting",
-          "Data validation, dropdown lists",
-          "Keyboard shortcuts for faster productivity",
         ],
       },
       {
@@ -91,8 +82,6 @@ export const msOfficeContent = {
           "Animations & transitions",
           "Custom layouts & design tools",
           "SmartArt diagrams",
-          "Slide master & branding",
-          "Professional business or school presentations",
         ],
       },
       {
@@ -102,8 +91,6 @@ export const msOfficeContent = {
           "Attachments, links, and signatures",
           "Inbox organization with folders & rules",
           "Scheduling meetings and events",
-          "Calendar management",
-          "Contact lists and address book",
         ],
       },
       {
