@@ -119,7 +119,17 @@ tutors: {
   ctaText: "Book a Free Demo Class",
   ctaLink: "https://wa.me/917646095877?text=I%20want%20to%20book%20a%20free%20SSC%20Bank%20demo%20class",
 },
-
+whoCanJoin: {
+  heading: "Who Can Join Our SSC Exam Preparation Program?",
+  description:
+    "Our SSC coaching program is designed for aspirants preparing for various Staff Selection Commission examinations, regardless of their academic background:",
+  list: [
+    "SSC CGL, CHSL, MTS & GD Aspirants",
+    "Graduates and Final-Year Students",
+    "12th Pass Candidates Preparing for Government Jobs",
+    "Working Professionals Aiming for Stable Government Careers"
+  ],
+},
 
   faqs: [
     {
