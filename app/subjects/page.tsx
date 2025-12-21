@@ -47,7 +47,7 @@ export default class MultipleItems extends Component {
                   </div>
                 </div>
                 <div className="flex justify-between items-center mt-6 pt-4">
-                  <Link href="/contact-us">
+                  <Link href="/subjects/academic-subjects/mathematics">
                     <button className="bg-blue-600 hover:bg-semiblueviolet border border-lightgray text-Blueviolet font-semibold px-6 py-2 rounded-xl shadow-md transition">
                       Enroll Now
                     </button>
@@ -84,7 +84,7 @@ export default class MultipleItems extends Component {
                   </div>
                 </div>
                 <div className="flex justify-between items-center mt-6 pt-4">
-                  <Link href="/contact-us">
+                  <Link href="/subjects/academic-subjects/science">
                     <button className="bg-blue-600 hover:bg-semiblueviolet border border-lightgray text-Blueviolet font-semibold px-6 py-2 rounded-xl shadow-md transition">
                       Enroll Now
                     </button>
@@ -119,7 +119,7 @@ export default class MultipleItems extends Component {
                   </div>
                 </div>
                 <div className="flex justify-between items-center mt-6 pt-4">
-                  <Link href="/contact-us">
+                  <Link href="/subjects/academic-subjects/languages">
                     <button className="bg-blue-600 hover:bg-semiblueviolet border border-lightgray text-Blueviolet font-semibold px-6 py-2 rounded-xl shadow-md transition">
                       Enroll Now
                     </button>
@@ -155,7 +155,7 @@ export default class MultipleItems extends Component {
                   </div>
                 </div>
                 <div className="flex justify-between items-center mt-6 pt-4">
-                  <Link href="/contact-us">
+                  <Link href="/subjects/professional-courses/exam-preparation">
                     <button className="bg-blue-600 hover:bg-semiblueviolet border border-lightgray text-Blueviolet font-semibold px-6 py-2 rounded-xl shadow-md transition">
                       Enroll Now
                     </button>

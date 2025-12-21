@@ -251,17 +251,48 @@ const ContactInfo: React.FC = () => (
         </p>
 
         <p className="flex items-center gap-2 mt-3 text-gray-300">
-          <LocationOutline />
+          <LocationOutline className="w-6 h-6"/>
           <span>Near T-Junction, Shapoorji, New Town, Action Area III, Kolkata, West Bengal – 700135, India</span>
         </p>
 
         <div className="flex gap-4 mt-4 text-orange-500 text-lg">
-          <FacebookF className="cursor-pointer hover:scale-110 transition" />
-          <Instagram className="cursor-pointer hover:scale-110 transition" />
-          <Whatsapp className="cursor-pointer hover:scale-110 transition" />
-          <MapMarkerAlt className="cursor-pointer hover:scale-110 transition" />
-          <Linkedin className="cursor-pointer hover:scale-110 transition" />
-        </div>
+  <a
+    href="https://www.facebook.com/profile.php?id=61584527892630"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:scale-110 transition"
+  >
+    <FacebookF />
+  </a>
+
+  <a
+    href="https://www.instagram.com/tutor4study/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:scale-110 transition"
+  >
+    <Instagram />
+  </a>
+
+  <a
+    href="https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:scale-110 transition"
+  >
+    <Whatsapp />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/company/tutor-4-study/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cursor-pointer hover:scale-110 transition"
+  >
+    <Linkedin />
+  </a>
+</div>
+
       </div>
     </div>
 

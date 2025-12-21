@@ -2,12 +2,42 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import {
+  Calculator,
+  FlaskConical,
+  Languages,
+  Globe,
+  Monitor,
+  BarChart,
+  Cpu,
+  Briefcase,
+  GraduationCap,
+  Users,
+  BookOpen,
+} from "lucide-react";
 
 interface NavigationItem {
   name: string;
   href: string;
   current: boolean;
 }
+const subjectIcons: Record<string, any> = {
+  // School Level
+  Mathematics: Calculator,
+  Science: FlaskConical,
+  Languages: Languages,
+  "Social Studies": Globe,
+  "Computer Technology": Monitor,
+
+  // College / Advanced
+  "Mathematics and Statistics": BarChart,
+  "Science and Engineering": Cpu,
+  "Commerce and Business": Briefcase,
+
+  // Professional
+  "Exam Preparation": GraduationCap,
+  "Soft Skills": Users,
+};
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
@@ -63,7 +93,7 @@ const Data = () => {
                 </Link>
               ) : (
                 // Subjects dropdown (click-to-toggle)
-                <div key="subjects" className="relative">
+                <div key="subjects" className="relative" onClick={(e) => e.stopPropagation()}>
                   {/* Subjects main link */}
                   <Link
                     href="/subjects"
@@ -74,11 +104,17 @@ const Data = () => {
 
                   {/* Dropdown toggle only for showing subcategories */}
                   <button
-                    onClick={() => setSubjectsOpen(!subjectsOpen)}
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setSubjectsOpen((prev) => !prev);
+                    }}
                     className="absolute right-0 top-2 text-lg font-normal opacity-50 hover:opacity-100 md:hidden"
                   >
                     {subjectsOpen ? "▲" : "▼"}
                   </button>
+
 
                   {/* Dropdown menu */}
                   {subjectsOpen && (
@@ -93,9 +129,13 @@ const Data = () => {
                                 <li key={sub}>
                                   <Link
                                     href={`/subjects/${cat.categorySlug}/${subSlug}`}
-                                    className="text-gray-600 text-sm hover:text-Blueviolet"
+                                    className="flex items-center gap-3 text-gray-600 text-sm hover:text-Blueviolet"
                                   >
-                                    {sub}
+                                    {(() => {
+                                      const Icon = subjectIcons[sub] || BookOpen;
+                                      return <Icon className="w-4 h-4 opacity-70" strokeWidth={1.25} />;
+                                    })()}
+                                    <span>{sub}</span>
                                   </Link>
                                 </li>
                               );
@@ -112,11 +152,6 @@ const Data = () => {
 
             {/* Buttons (sticky at bottom) */}
             <div className="mt-4 flex gap-4 sticky bottom-0 bg-white py-2"> {/* 👈 Sticks at the bottom */}
-              <Link href="/contact-us" className="flex-1">
-                <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium py-2 px-4 rounded-full">
-                  Register
-                </button>
-              </Link>
               <a href="tel:+917073437393">
                 <button className="bg-white w-full text-Blueviolet border border-semiblueviolet font-medium py-2 px-4 rounded-full">
                   Call Us

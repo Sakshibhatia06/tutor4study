@@ -9,6 +9,37 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Image from 'next/image';
+import {
+  Calculator,
+  FlaskConical,
+  Languages,
+  Globe,
+  Monitor,
+  BarChart,
+  Cpu,
+  Briefcase,
+  GraduationCap,
+  Users,
+  BookOpen,
+} from "lucide-react";
+const subjectIcons: Record<string, any> = {
+  // School Level
+  Mathematics: Calculator,
+  Science: FlaskConical,
+  Languages: Languages,
+  "Social Studies": Globe,
+  "Computer Technology": Monitor,
+
+  // College / Advanced
+  "Mathematics and Statistics": BarChart,
+  "Science and Engineering": Cpu,
+  "Commerce and Business": Briefcase,
+
+  // Professional
+  "Exam Preparation": GraduationCap,
+  "Soft Skills": Users,
+};
+
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -62,10 +93,10 @@ const Navbar = () => {
               {/* LOGO */}
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/" className="flex items-center">
-                  <Image src={Logo} alt="Logo" width={100} height={100} className="h-20 w-auto block lg:hidden" priority unoptimized/>
+                  <Image src={Logo} alt="Logo" width={100} height={100} className="h-20 w-auto block lg:hidden" priority unoptimized />
                 </Link>
                 <Link href="/" className="flex items-center">
-                  <Image src={Logo} alt="Logo" width={100} height={100} className="h-20 w-auto hidden lg:block" priority unoptimized/>
+                  <Image src={Logo} alt="Logo" width={100} height={100} className="h-20 w-auto hidden lg:block" priority unoptimized />
                 </Link>
               </div>
 
@@ -120,12 +151,18 @@ const Navbar = () => {
                                 const subSlug = sub.toLowerCase().replace(/\s+/g, "-");
                                 return (
                                   <li key={sub}>
-                                    <Link href={`/subjects/${cat.categorySlug}/${subSlug}`}>
-                                      <span className="text-gray-600 hover:text-Blueviolet text-lg cursor-pointer">
-                                        {sub}
-                                      </span>
+                                    <Link
+                                      href={`/subjects/${cat.categorySlug}/${subSlug}`}
+                                      className="flex items-center gap-3 text-gray-600 hover:text-Blueviolet text-lg cursor-pointer"
+                                    >
+                                      {(() => {
+                                        const Icon = subjectIcons[sub] || BookOpen;
+                                        return <Icon className="w-5 h-5 opacity-70" strokeWidth={1.25} />;
+                                      })()}
+                                      <span>{sub}</span>
                                     </Link>
                                   </li>
+
                                 );
                               })}
                             </ul>
@@ -158,11 +195,6 @@ const Navbar = () => {
 
             {/* REGISTER & CALL US BUTTONS */}
             <div className="hidden lg:flex space-x-4">
-              <Link href="/contact-us">
-                <button className="text-Blueviolet text-lg font-medium py-4 px-6 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet">
-                  Register
-                </button>
-              </Link>
               <a href="tel:+917073437393">
                 <button className="text-lg text-Blueviolet px-6 py-4 rounded-full font-medium shadow hover:brightness-110 transition border border-lightgray hover:bg-semiblueviolet">
                   Call Us
