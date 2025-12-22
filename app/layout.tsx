@@ -5,7 +5,7 @@ import WhatsAppButton from './components/whatsappButton/WhatsAppButton';
 
 export const metadata = {
   title: 'Tutor4Study',
-  description: 'Learning website',
+  description: 'Tutor4Study offers expert online tutoring for school subjects, college courses, and competitive exams. Learn from experienced tutors with flexible schedules and personalized guidance.',
 };
 
 export default function RootLayout({
