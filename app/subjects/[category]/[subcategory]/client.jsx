@@ -59,7 +59,7 @@ export default function SubCategoryPageClient({ params }) {
                 <Link
                   href={`/subjects/${category}/${subcategory}/${topic.slug}`}
                 >
-                  <button className="bg-blue-600 hover:bg-semiblueviolet text-white px-6 py-2 rounded-xl font-semibold">
+                 <button className="bg-blue-600 hover:bg-semiblueviolet border border-lightgray text-Blueviolet font-semibold px-6 py-2 rounded-xl shadow-md transition">
                     Read More
                   </button>
                 </Link>

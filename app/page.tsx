@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Tutor4Study | Online Tutoring for School, College and Competitive Exams",
+  description:
+    "Tutor4Study offers expert online tutoring for school subjects, college courses, and competitive exams. Learn from experienced tutors with flexible schedules and personalized guidance.",
+};
 import Banner from './components/Banner/index';
 import Subjects from './components/Subjects/index';
 import WhyChooseUs from './components/WhyChooseUs/index'
