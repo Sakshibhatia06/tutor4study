@@ -251,7 +251,7 @@ const ContactInfo: React.FC = () => (
         </p>
 
         <p className="flex items-center gap-2 mt-3 text-gray-300">
-           <LocationOutline className="w-12 h-12 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"/>
+           <LocationOutline className="w-12 h-12 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-6 lg:h-6"/>
           <span>Near T-Junction, Shapoorji, New Town, Action Area III, Kolkata, West Bengal – 700135, India</span>
         </p>
 
