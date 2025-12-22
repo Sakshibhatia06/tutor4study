@@ -1,7 +1,6 @@
 import Banner from './components/Banner/index';
 import Subjects from './components/Subjects/index';
 import WhyChooseUs from './components/WhyChooseUs/index'
-import Mentor from './components/Mentor/index';
 import Testimonials from './components/Testimonials/index';
 import Enrollment from "@/app/components/Enrollment/index";
 import FAQ from '@/app/components/FAQ/index';
@@ -13,7 +12,6 @@ export default async function Home() {
       <Banner />
       <Subjects />
       <WhyChooseUs />
-      <Mentor />
       <section className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-10">
           Latest <span className="text-Blueviolet">Blogs</span>
