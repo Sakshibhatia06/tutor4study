@@ -56,25 +56,23 @@ const ContactForm: React.FC<{
   const [contactError, setContactError] = useState("");
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = e.target;
+    const value = e.target.value;
     setFormData((prev) => ({ ...prev, email: value }));
-
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    setEmailError(regex.test(value) ? "" : "Please enter a valid email");
+    setEmailError(
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+        ? ""
+        : "Please enter a valid email"
+    );
   };
 
   const handleContactChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = e.target;
-    // Allow only digits
-    const numericValue = value.replace(/\D/g, "");
+    const numericValue = e.target.value.replace(/\D/g, "");
     setFormData((prev) => ({ ...prev, contact: numericValue }));
-
-    // ✅ Check for exactly 10 digits
-    if (numericValue.length !== 10) {
-      setContactError("Contact number must be exactly 10 digits");
-    } else {
-      setContactError("");
-    }
+    setContactError(
+      numericValue.length !== 10
+        ? "Contact number must be exactly 10 digits"
+        : ""
+    );
   };
 
   return (
@@ -84,103 +82,67 @@ const ContactForm: React.FC<{
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input
             type="text"
-            name="name"
             placeholder="Full Name"
             value={formData.name}
             onChange={(e) =>
               setFormData((prev) => ({ ...prev, name: e.target.value }))
             }
             required
-            className="p-3 rounded bg-gray-200 text-black placeholder-gray-700 focus:ring-2 focus:ring-Blueviolet outline-none"
+            className="p-3 rounded bg-gray-200"
           />
-          <div className="flex flex-col">
+
+          <div>
             <input
               type="email"
-              name="email"
               placeholder="Email"
               value={formData.email}
               onChange={handleEmailChange}
               required
-              className={`p-3 rounded bg-gray-200 text-black placeholder-gray-700 focus:ring-2 focus:ring-Blueviolet outline-none ${
-                emailError ? "border-red-500 border" : ""
+              className={`p-3 rounded bg-gray-200 w-full ${
+                emailError ? "border border-red-500" : ""
               }`}
             />
             {emailError && (
-              <span className="text-red-500 text-sm mt-1">{emailError}</span>
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
             )}
           </div>
         </div>
 
-      {/* Country Code + Contact */}
-<div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-  {/* Country Code */}
-  <div className="flex flex-col">
-    <PhoneInput
-      country={"in"}
-      value={formData.countryCode}
-      onChange={(code) =>
-        setFormData((prev) => ({ ...prev, countryCode: code }))
-      }
-      inputProps={{
-        name: "countryCode",
-        required: true,
-      }}
-      enableSearch
-      countryCodeEditable
-      containerStyle={{
-        width: "100%",
-      }}
-      buttonStyle={{
-        backgroundColor: "#fff",
-        border: "1px solid #d1d5db",
-        borderRight: "none",
-        borderRadius: "8px 0 0 8px",
-        padding: "0 10px",
-      }}
-      inputStyle={{
-        width: "100%",
-        height: "48px",
-        border: "1px solid #d1d5db",
-        borderRadius: "0 8px 8px 0",
-        paddingLeft: "65px",
-        fontSize: "16px",
-        backgroundColor: "#fff",
-        color: "#000",
-      }}
-      dropdownStyle={{
-        color: "#000",
-      }}
-    />
-  </div>
+        {/* Country Code + Contact */}
+        <div className="grid lg:grid-cols-2 gap-4">
+          <PhoneInput
+            country="in"
+            value={formData.countryCode}
+            onChange={(code) =>
+              setFormData((prev) => ({ ...prev, countryCode: `+${code}` }))
+            }
+            enableSearch
+          />
 
-  {/* Contact Number */}
-  <div className="flex flex-col">
-    <input
-      type="tel"
-      name="contact"
-      placeholder="Contact or WhatsApp Number"
-      value={formData.contact}
-      onChange={handleContactChange}
-      required
-      className={`w-full p-3 rounded bg-gray-200 text-black placeholder-gray-700 focus:ring-2 focus:ring-Blueviolet outline-none ${
-        contactError ? "border-red-500 border" : ""
-      }`}
-    />
-    {contactError && (
-      <span className="text-red-500 text-sm mt-1">{contactError}</span>
-    )}
-  </div>
-</div>
-
+          <div>
+            <input
+              type="tel"
+              placeholder="Contact or WhatsApp Number"
+              value={formData.contact}
+              onChange={handleContactChange}
+              required
+              className={`p-3 rounded bg-gray-200 w-full ${
+                contactError ? "border border-red-500" : ""
+              }`}
+            />
+            {contactError && (
+              <p className="text-red-500 text-sm mt-1">{contactError}</p>
+            )}
+          </div>
+        </div>
 
         {/* Subjects */}
         <select
-          name="Subjects"
           value={formData.subjects}
           onChange={(e) =>
             setFormData((prev) => ({ ...prev, subjects: e.target.value }))
           }
-          className="w-full p-3 rounded bg-gray-200 text-black focus:ring-2 focus:ring-Blueviolet outline-none placeholder-gray-700"
+          className="p-3 rounded bg-gray-200 w-full"
         >
           <option>Math Tutoring</option>
           <option>Science Tutoring</option>
@@ -190,29 +152,27 @@ const ContactForm: React.FC<{
 
         {/* Message */}
         <textarea
-          name="message"
           rows={4}
+          placeholder="Briefly describe your message"
           value={formData.message}
           onChange={(e) =>
             setFormData((prev) => ({ ...prev, message: e.target.value }))
           }
-          placeholder="Briefly describe your message"
-          className="w-full p-3 rounded bg-gray-200 text-black placeholder-gray-700 focus:ring-2 focus:ring-Blueviolet outline-none"
+          className="p-3 rounded bg-gray-200 w-full"
         />
 
         {/* Submit */}
-        <div className="flex justify-center">
-          <button
-            type="submit"
-            disabled={loading || emailError !== "" || contactError !== ""}
-            className="py-2 px-8 text-lg text-Blueviolet rounded-full font-medium shadow hover:brightness-110 transition border border-lightgray hover:bg-white"
-          >
-            {loading ? "Submitting..." : "Submit"}
-          </button>
-        </div>
+        <button
+  type="submit"
+  disabled={loading || emailError !== "" || contactError !== ""}
+  className="py-2 px-8 rounded-full border"
+>
+  {loading ? "Submitting..." : "Submit"}
+</button>
+
 
         {responseMessage && (
-          <p className="text-center text-sm mt-4 font-medium text-black">
+          <p className="text-center mt-3 font-medium text-black">
             {responseMessage}
           </p>
         )}
@@ -226,73 +186,31 @@ const ContactForm: React.FC<{
 ===================== */
 const ContactInfo: React.FC = () => (
   <div className="flex flex-col gap-8">
-    <div className="relative rounded-xl p-6 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg bg-paleblue">
-      <div className="relative z-10">
-        <h3 className="text-2xl font-semibold mb-3 text-orange-500">
-          Contact Information
-        </h3>
-        <p className="text-gray-300 font-bold">Tutor4Study</p>
+    <div className="rounded-xl p-6 shadow-lg bg-paleblue">
+      <h3 className="text-2xl font-semibold text-orange-500">
+        Contact Information
+      </h3>
 
-        <p className="flex items-center gap-2 mt-3 text-gray-300">
-          <CallOutline />
-         <a href="tel: +917646095877" className="hover:underline">
-            +91 7646095877
-          </a>
-        </p>
+      <p className="flex items-center gap-2 mt-3 text-gray-300">
+        <CallOutline />
+        <a href="tel:+917646095877">+91 7646095877</a>
+      </p>
 
-        <p className="flex items-center gap-2 mt-3 text-gray-300">
-          <MailOutline />
-          <a
-            href="mailto:tutor4study24x7@gmail.com"
-            className="hover:underline"
-          >
-            tutor4study24x7@gmail.com
-          </a>
-        </p>
+      <p className="flex items-center gap-2 mt-3 text-gray-300">
+        <MailOutline />
+        tutor4study24x7@gmail.com
+      </p>
 
-        <p className="flex items-center gap-2 mt-3 text-gray-300">
-           <LocationOutline className="w-12 h-12 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-6 lg:h-6"/>
-          <span>Near T-Junction, Shapoorji, New Town, Action Area III, Kolkata, West Bengal – 700135, India</span>
-        </p>
+      <p className="flex items-center gap-2 mt-3 text-gray-300">
+        <LocationOutline />
+        New Town, Kolkata, West Bengal – 700135
+      </p>
 
-        <div className="flex gap-4 mt-4 text-orange-500 text-lg">
-  <a
-    href="https://www.facebook.com/profile.php?id=61584527892630"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="cursor-pointer hover:scale-110 transition"
-  >
-    <FacebookF />
-  </a>
-
-  <a
-    href="https://www.instagram.com/tutor4study/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="cursor-pointer hover:scale-110 transition"
-  >
-    <Instagram />
-  </a>
-
-  <a
-    href="https://wa.me/917646095877?text=I%20would%20like%20to%20book%20a%20free%20demo%20class"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="cursor-pointer hover:scale-110 transition"
-  >
-    <Whatsapp />
-  </a>
-
-  <a
-    href="https://www.linkedin.com/company/tutor-4-study/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="cursor-pointer hover:scale-110 transition"
-  >
-    <Linkedin />
-  </a>
-</div>
-
+      <div className="flex gap-4 mt-4 text-orange-500">
+        <FacebookF />
+        <Instagram />
+        <Whatsapp />
+        <Linkedin />
       </div>
     </div>
 
@@ -328,67 +246,71 @@ const ContactUs: React.FC = () => {
   const [responseMessage, setResponseMessage] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setResponseMessage("");
+  e.preventDefault();
+  setLoading(true);
+  setResponseMessage("");
 
-    // Final client-side validation
-    if (!/^\d{10}$/.test(formData.contact)) {
-      setResponseMessage("Please enter a valid 10-digit contact number.");
-      setLoading(false);
-      return;
-    }
+  const payload = {
+    name: formData.name,
+    email: formData.email,
+    message: formData.message,
+    phoneNumber: `${formData.countryCode}${formData.contact}`,
+    serviceNeeded: formData.subjects,
+    deadline: "Not specified",
+  };
 
-    try {
-      const res = await fetch("/api/contact", {
+  try {
+    const res = await fetch(
+      "https://dashbord-backend-wixl.onrender.com/api/website/contact",
+      {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        setResponseMessage("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          countryCode: "+91",
-          contact: "",
-          subjects: "Math Tutoring",
-          message: "",
-        });
-      } else {
-        setResponseMessage(`Failed: ${data.error || "Something went wrong."}`);
+        body: JSON.stringify(payload),
       }
-    } catch (err) {
-      console.error(err);
-      setResponseMessage("An error occurred. Please try again.");
-    } finally {
-      setLoading(false);
+    );
+
+    // ✅ YAHI ADD KARNA HAI
+    const data = await res.json();
+    console.log("API RESPONSE:", data);
+
+    if (res.ok && data.success) {
+      setResponseMessage(data.message || "Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        countryCode: "+91",
+        contact: "",
+        subjects: "Math Tutoring",
+        message: "",
+      });
+    } else {
+      setResponseMessage(data.message || "Something went wrong!");
     }
-  };
+  } catch (error) {
+    console.error("API ERROR:", error);
+    setResponseMessage("Server error. Try again later.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <>
-    <section className="relative bg-slate-100 text-black px-6 pt-10 overflow-hidden lg:px-0 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-        <ContactForm
-          formData={formData}
-          setFormData={setFormData}
-          handleSubmit={handleSubmit}
-          loading={loading}
-          responseMessage={responseMessage}
-        />
-        <ContactInfo />
-      </div>
-    </section>
-     <FAQ/>
-           <div className="max-w-7xl mx-auto px-6">
-                 <hr />
-           </div>
-            
-          </>
+      <section className="max-w-7xl mx-auto px-6 pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <ContactForm
+            formData={formData}
+            setFormData={setFormData}
+            handleSubmit={handleSubmit}
+            loading={loading}
+            responseMessage={responseMessage}
+          />
+          <ContactInfo />
+        </div>
+      </section>
+      <FAQ />
+    </>
   );
 };
 
